@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { tvApi } from "../../api";
 
 const useLogic = (state, setState) => {
-  const asyncFunction = async () => {
+  const tvFunction = async () => {
     setState({
       ...state,
       loading: true,
@@ -24,7 +24,7 @@ const useLogic = (state, setState) => {
   };
 
   useEffect(() => {
-    asyncFunction();
+    tvFunction();
   }, []);
 };
 

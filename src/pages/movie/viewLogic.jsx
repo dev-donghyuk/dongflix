@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { movieApi } from "../../api";
 
 const useLogic = (state, setState) => {
-  const asyncFunction = async () => {
+  const movieFunction = async () => {
     setState({
       ...state,
       loading: true,
@@ -23,7 +23,7 @@ const useLogic = (state, setState) => {
     }
   };
   useEffect(() => {
-    asyncFunction();
+    movieFunction();
   }, []);
 };
 

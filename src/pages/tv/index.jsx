@@ -15,7 +15,9 @@ const Tv = () => {
     error: null,
     loading: true,
   });
+
   useLogic(state, setState);
+
   return (
     <Wrapper>
       {state.loading ? (
@@ -26,14 +28,13 @@ const Tv = () => {
             <Section title="Top Rated">
               {state.topRated.map((x, index) => {
                 return (
-                  <Grid item md={1}>
+                  <Grid item className="Poster_Wrap" key={x.id}>
                     <Poster
-                      key={x.id}
                       id={x.id}
-                      title={x.original_title}
+                      title={x.original_name}
                       imageUrl={x.poster_path}
                       rating={x.vote_average}
-                      year={x.release_date.substring(0, 4)}
+                      year={x.first_air_date.substring(0, 4)}
                       isMovie={false}
                     />
                   </Grid>
@@ -45,14 +46,13 @@ const Tv = () => {
             <Section title="Popular TV">
               {state.popular.map((x, index) => {
                 return (
-                  <Grid item md={1}>
+                  <Grid item className="Poster_Wrap" key={x.id}>
                     <Poster
-                      key={x.id}
                       id={x.id}
-                      title={x.original_title}
+                      title={x.original_name}
                       imageUrl={x.poster_path}
                       rating={x.vote_average}
-                      year={x.release_date.substring(0, 4)}
+                      year={x.first_air_date.substring(0, 4)}
                       isMovie={false}
                     />
                   </Grid>
@@ -64,14 +64,13 @@ const Tv = () => {
             <Section title="Airing Today TV">
               {state.airingToday.map((x, index) => {
                 return (
-                  <Grid item md={1}>
+                  <Grid item className="Poster_Wrap" key={x.id}>
                     <Poster
-                      key={x.id}
                       id={x.id}
-                      title={x.original_title}
+                      title={x.original_name}
                       imageUrl={x.poster_path}
                       rating={x.vote_average}
-                      year={x.release_date.substring(0, 4)}
+                      year={x.first_air_date.substring(0, 4)}
                       isMovie={false}
                     />
                   </Grid>

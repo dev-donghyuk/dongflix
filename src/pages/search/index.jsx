@@ -59,9 +59,8 @@ const Search = () => {
               <Section title="Movie Results">
                 {state.movieResult.map((x, index) => {
                   return (
-                    <Grid item md={1}>
+                    <Grid item className="Poster_Wrap" key={x.id}>
                       <Poster
-                        key={x.id}
                         id={x.id}
                         title={x.original_title}
                         imageUrl={x.poster_path}
@@ -78,14 +77,13 @@ const Search = () => {
               <Section title="TV Results">
                 {state.tvResult.map((x, index) => {
                   return (
-                    <Grid item md={1}>
+                    <Grid item className="Poster_Wrap" key={x.id}>
                       <Poster
-                        key={x.id}
                         id={x.id}
-                        title={x.original_title}
+                        title={x.original_name}
                         imageUrl={x.poster_path}
                         rating={x.vote_average}
-                        year={x.release_date.substring(0, 4)}
+                        year={x.first_air_date.substring(0, 4)}
                         isMovie={false}
                       />
                     </Grid>

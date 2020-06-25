@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const Image = styled.div`
-  background: url(${(props) => `https://image.tmdb.org/t/p/w200${props.bgUrl}`})
-    center center;
+  background: url(${(props) => `${props.bgUrl}`}) center center;
   background-size: cover;
 `;
 
@@ -22,8 +21,8 @@ export const Wrapper = styled.div`
       top: 50px;
       z-index: 99999;
       width: 100%;
-      text-align: center;
       opacity: 0;
+      text-align: center;
       transition: all 0.4s ease;
       & .Title {
         margin-bottom: 3px;
@@ -43,13 +42,29 @@ export const Wrapper = styled.div`
     }
     & .Rating {
       position: absolute;
-      left: 50%;
+      left: 0;
       bottom: 10px;
-      transform: translateX(-50%);
-      font-size: 12px;
-      font-weight: bold;
+      width: 100%;
       opacity: 0;
-      color: #000;
+      padding: 0 10px;
+      box-sizing: border-box;
+      & .Star {
+        position: relative;
+        display: block;
+        width: 110px;
+        height: 20px;
+        margin: 0 auto;
+        background: url("/images/star1.png") no-repeat;
+      }
+      & .Star_Cover {
+        position: absolute;
+        left: 0px;
+        top: 0;
+        display: block;
+        width: 0;
+        height: 20px;
+        background: url("/images/star11.png") no-repeat;
+      }
     }
     &::before {
       content: "";

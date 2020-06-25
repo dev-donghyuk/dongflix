@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Grid } from "@material-ui/core";
 import Wrapper from "./styles";
 
@@ -7,7 +7,6 @@ import Poster from "../../pages/poster";
 import Section from "../../components/section";
 import Loader from "../../components/loader";
 import Message from "../message";
-import { movieApi } from "../../api";
 
 const Movie = () => {
   const [state, setState] = useState({
@@ -29,9 +28,8 @@ const Movie = () => {
             <Section title="Now Playing">
               {state.nowPlaying.map((x, index) => {
                 return (
-                  <Grid item xs={3} sm={2} md={1}>
+                  <Grid item className="Poster_Wrap" key={x.id}>
                     <Poster
-                      key={x.id}
                       id={x.id}
                       title={x.original_title}
                       imageUrl={x.poster_path}
@@ -48,9 +46,8 @@ const Movie = () => {
             <Section title="UpComing Movies">
               {state.upComing.map((x, index) => {
                 return (
-                  <Grid item xs={3} sm={2} md={1}>
+                  <Grid item className="Poster_Wrap" key={x.id}>
                     <Poster
-                      key={x.id}
                       id={x.id}
                       title={x.original_title}
                       imageUrl={x.poster_path}
@@ -67,9 +64,8 @@ const Movie = () => {
             <Section title="Popular Movies">
               {state.popular.map((x, index) => {
                 return (
-                  <Grid item xs={3} sm={2} md={1}>
+                  <Grid item className="Poster_Wrap" key={x.id}>
                     <Poster
-                      key={x.id}
                       id={x.id}
                       title={x.original_title}
                       imageUrl={x.poster_path}

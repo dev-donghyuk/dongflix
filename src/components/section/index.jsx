@@ -6,9 +6,7 @@ const Section = ({ title, children }) => {
   return (
     <Wrapper>
       <h2>{title}</h2>
-      <Grid container spacing={1}>
-        {children}
-      </Grid>
+      <Grid container>{children}</Grid>
     </Wrapper>
   );
 };
