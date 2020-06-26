@@ -30,11 +30,6 @@ const Poster = ({ id, imageUrl, title, rating, year, isMovie = false }) => {
                   style={{ width: `${star_rating}%` }}
                 ></span>
               </span>
-              {/* <span role="img" aria-label="rating">
-                ⭐️
-              </span>
-              &nbsp;
-              {rating}/10 */}
             </span>
           </Image>
         </Grid>

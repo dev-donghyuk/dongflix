@@ -51,10 +51,10 @@ export const Wrapper = styled.div`
       & .Star {
         position: relative;
         display: block;
-        width: 110px;
+        width: 100px;
         height: 20px;
         margin: 0 auto;
-        background: url("/images/star1.png") no-repeat;
+        background: url("/images/star.png") no-repeat;
       }
       & .Star_Cover {
         position: absolute;
@@ -63,7 +63,7 @@ export const Wrapper = styled.div`
         display: block;
         width: 0;
         height: 20px;
-        background: url("/images/star11.png") no-repeat;
+        background: url("/images/star_cover.png") no-repeat;
       }
     }
     &::before {

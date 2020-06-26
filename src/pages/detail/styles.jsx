@@ -35,13 +35,45 @@ export const Wrapper = styled.div`
         height: 100%;
         & > div {
           & h2 {
+            line-height: 48px;
             font-size: 32px;
             font-weight: bold;
             color: #fff;
             text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
           }
           & h3 {
-            padding: 20px 0 40px;
+            padding: 10px 0 30px;
+            & > span {
+              display: inline-block;
+              margin-right: 20px;
+              color: #fff;
+              &:last-child {
+                margin-right: 0;
+              }
+              &.Rating {
+                padding: 0 10px;
+                box-sizing: border-box;
+                & .Star {
+                  position: relative;
+                  display: block;
+                  width: 80px;
+                  height: 16px;
+                  margin: 0 auto;
+                  /* background: url("/images/star.png") no-repeat; */
+                  /* background-size: 80px; */
+                }
+                & .Star_Cover {
+                  position: absolute;
+                  left: 0px;
+                  top: 0;
+                  display: block;
+                  width: 0;
+                  height: 16px;
+                  background: url("/images/star_cover_w.png") no-repeat;
+                  background-size: 80px;
+                }
+              }
+            }
           }
         }
       }
