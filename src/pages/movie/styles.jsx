@@ -6,7 +6,7 @@ const Wrapper = styled.div`
     transition: all 0.4s;
   }
   & .Box_Wrap {
-    padding-top: 60px;
+    padding-top: 64px;
     & .Poster_Wrap {
       width: 8.333%;
       padding: 4px;

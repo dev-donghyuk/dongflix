@@ -2,9 +2,11 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   padding: 40px 0px;
-
+  * {
+    transition: all 0.4s;
+  }
   & .Box_Wrap {
-    padding-top: 60px;
+    padding-top: 64px;
     & .Poster_Wrap {
       width: 8.333%;
       padding: 4px;

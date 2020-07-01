@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  padding: 60px 20px;
+  * {
+    transition: all 0.4s;
+  }
+  padding: 64px 24px;
   width: 100vw;
   box-sizing: border-box;
   & h2 {

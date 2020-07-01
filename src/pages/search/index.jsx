@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { movieApi, tvApi } from "./../../api";
 import Wrapper from "./styles";
+import Helmet from "react-helmet";
+
 import Loader from "./../../components/loader/";
 import Section from "./../../components/section/";
 import { Grid } from "@material-ui/core";
@@ -43,6 +45,9 @@ const Search = () => {
   };
   return (
     <Wrapper>
+      <Helmet>
+        <title>Search | Dongflix</title>
+      </Helmet>
       <form onSubmit={submitFunction} className="Search_Form">
         <input
           type="text"
@@ -52,7 +57,12 @@ const Search = () => {
       </form>
       <Grid className="Box_Wrap">
         {state.loading ? (
-          <Loader />
+          <>
+            <Loader />
+            <Helmet>
+              <title>Search | Dongflix</title>
+            </Helmet>
+          </>
         ) : (
           <>
             {state.movieResult && state.movieResult.length > 0 && (
@@ -65,7 +75,12 @@ const Search = () => {
                         title={x.original_title}
                         imageUrl={x.poster_path}
                         rating={x.vote_average}
-                        year={x.release_date.substring(0, 4)}
+                        year={
+                          x &&
+                          x.release_date &&
+                          x.release_date.substring(0, 4) &&
+                          x.release_date.substring(0, 4)
+                        }
                         isMovie={false}
                       />
                     </Grid>
@@ -83,7 +98,14 @@ const Search = () => {
                         title={x.original_name}
                         imageUrl={x.poster_path}
                         rating={x.vote_average}
-                        year={x.first_air_date.substring(0, 4)}
+                        // year={x.first_air_date.substring(0, 4)}
+                        year={
+                          x &&
+                          x.first_air_date &&
+                          x.first_air_date.substring(0, 4)
+                            ? x.first_air_date.substring(0, 4)
+                            : "Not Found"
+                        }
                         isMovie={false}
                       />
                     </Grid>

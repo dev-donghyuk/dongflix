@@ -2,13 +2,15 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   padding: 40px 0px;
-
+  * {
+    transition: all 0.4s;
+  }
   & .Search_Form {
     width: 100%;
-    padding-top: 20px;
+    padding-top: 24px;
     & input {
       width: 100%;
-      padding: 20px 10px 0;
+      padding: 24px 8px 0;
       font-size: 28px;
       color: rgba(255, 255, 255, 1);
       background: none;

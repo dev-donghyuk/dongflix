@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Grid } from "@material-ui/core";
 import Wrapper from "./styles";
+import Helmet from "react-helmet";
 
 import useLogic from "./viewLogic";
 import Poster from "../../pages/poster";
@@ -20,8 +21,16 @@ const Movie = () => {
 
   return (
     <Wrapper>
+      <Helmet>
+        <title>Movies | Dongflix</title>
+      </Helmet>
       {state.loading ? (
-        <Loader />
+        <>
+          <Loader />
+          <Helmet>
+            <title>Movies | Dongflix</title>
+          </Helmet>
+        </>
       ) : (
         <Grid className="Box_Wrap">
           {state.nowPlaying && state.nowPlaying.length > 0 && (

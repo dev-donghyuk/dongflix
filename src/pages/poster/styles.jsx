@@ -7,6 +7,9 @@ export const Image = styled.div`
 
 export const Wrapper = styled.div`
   cursor: pointer;
+  * {
+    transition: all 0.4s;
+  }
   & .Image_Wrap {
     margin-bottom: 5px;
   }
@@ -46,13 +49,13 @@ export const Wrapper = styled.div`
       bottom: 10px;
       width: 100%;
       opacity: 0;
-      padding: 0 10px;
+      padding: 0 8px;
       box-sizing: border-box;
       & .Star {
         position: relative;
         display: block;
         width: 100px;
-        height: 20px;
+        height: 24px;
         margin: 0 auto;
         background: url("/images/star.png") no-repeat;
       }
@@ -62,7 +65,7 @@ export const Wrapper = styled.div`
         top: 0;
         display: block;
         width: 0;
-        height: 20px;
+        height: 24px;
         background: url("/images/star_cover.png") no-repeat;
       }
     }

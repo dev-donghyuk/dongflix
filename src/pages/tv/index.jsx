@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Wrapper from "./styles";
+import Helmet from "react-helmet";
+
 import useLogic from "./viewLogic";
 import Section from "../../components/section";
 import { Grid } from "@material-ui/core";
@@ -20,8 +22,16 @@ const Tv = () => {
 
   return (
     <Wrapper>
+      <Helmet>
+        <title>Tvs | Dongflix</title>
+      </Helmet>
       {state.loading ? (
-        <Loader />
+        <>
+          <Loader />
+          <Helmet>
+            <title>Tvs | Dongflix</title>
+          </Helmet>
+        </>
       ) : (
         <Grid className="Box_Wrap">
           {state.topRated && state.topRated.length > 0 && (
