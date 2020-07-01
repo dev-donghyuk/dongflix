@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Wrapper, Icon } from "./styles";
 
@@ -27,7 +27,7 @@ const useTabs = (TabValue, Content) => {
 };
 const Header = () => {
   const { currentItem, changeItem } = useTabs(0, data);
-
+  // useContext로 currentPage 관리하기
   return (
     <Wrapper>
       <ul>

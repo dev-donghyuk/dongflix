@@ -23,7 +23,7 @@ const Routes = () => {
         <Route path="/movie/:id" component={Detail}></Route>
         <Route path="/tv/:id" component={Detail}></Route>
 
-        <Redirect from="*" to="/" />
+        <Redirect from="*" to="/movie" />
       </Switch>
     </Router>
   );
