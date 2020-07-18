@@ -2,6 +2,7 @@
   "name": "react_nc",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://dongheok.github.io/dongflix/",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
