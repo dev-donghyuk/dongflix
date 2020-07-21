@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/dongflix/static/css/main.66e4c2fb.chunk.css",
-    "main.js": "/dongflix/static/js/main.36965cd3.chunk.js",
-    "main.js.map": "/dongflix/static/js/main.36965cd3.chunk.js.map",
-    "runtime-main.js": "/dongflix/static/js/runtime-main.388dbd0f.js",
-    "runtime-main.js.map": "/dongflix/static/js/runtime-main.388dbd0f.js.map",
-    "static/js/2.041c98c8.chunk.js": "/dongflix/static/js/2.041c98c8.chunk.js",
-    "static/js/2.041c98c8.chunk.js.map": "/dongflix/static/js/2.041c98c8.chunk.js.map",
+    "main.js": "/dongflix/static/js/main.d15dc74d.chunk.js",
+    "main.js.map": "/dongflix/static/js/main.d15dc74d.chunk.js.map",
+    "runtime-main.js": "/dongflix/static/js/runtime-main.a2dfa003.js",
+    "runtime-main.js.map": "/dongflix/static/js/runtime-main.a2dfa003.js.map",
+    "static/js/2.06cab90e.chunk.js": "/dongflix/static/js/2.06cab90e.chunk.js",
+    "static/js/2.06cab90e.chunk.js.map": "/dongflix/static/js/2.06cab90e.chunk.js.map",
     "index.html": "/dongflix/index.html",
-    "precache-manifest.9c82b3d5361f7d3291649dc2081111c2.js": "/dongflix/precache-manifest.9c82b3d5361f7d3291649dc2081111c2.js",
+    "precache-manifest.73cb0c201789cb30231dd3c7c04b15a3.js": "/dongflix/precache-manifest.73cb0c201789cb30231dd3c7c04b15a3.js",
     "service-worker.js": "/dongflix/service-worker.js",
     "static/css/main.66e4c2fb.chunk.css.map": "/dongflix/static/css/main.66e4c2fb.chunk.css.map",
-    "static/js/2.041c98c8.chunk.js.LICENSE.txt": "/dongflix/static/js/2.041c98c8.chunk.js.LICENSE.txt"
+    "static/js/2.06cab90e.chunk.js.LICENSE.txt": "/dongflix/static/js/2.06cab90e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.388dbd0f.js",
-    "static/js/2.041c98c8.chunk.js",
+    "static/js/runtime-main.a2dfa003.js",
+    "static/js/2.06cab90e.chunk.js",
     "static/css/main.66e4c2fb.chunk.css",
-    "static/js/main.36965cd3.chunk.js"
+    "static/js/main.d15dc74d.chunk.js"
   ]
 }
