@@ -70,7 +70,7 @@ const Detail = (props) => {
             bgUrl={
               state && state.result && state.result.backdrop_path
                 ? `https://image.tmdb.org/t/p/original${state.result.backdrop_path}`
-                : "/images/notVideo.jpg"
+                : "/dongflix/images/notVideo.jpg"
             }
           />
           <Grid container className="Detail">
@@ -78,7 +78,7 @@ const Detail = (props) => {
               src={
                 state && state.result && state.result.poster_path
                   ? `https://image.tmdb.org/t/p/original${state.result.poster_path}`
-                  : "/images/notVideo.jpg"
+                  : "/dongflix/images/notVideo.jpg"
               }
               alt="Poster"
               className="Poster"

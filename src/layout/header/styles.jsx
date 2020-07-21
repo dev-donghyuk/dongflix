@@ -8,7 +8,7 @@ export const Icon = styled.span`
   transform: translate(-50%, -50%);
   width: 24px;
   height: 24px;
-  background: url(${(props) => `/images/icon/${props.iconUrl}`});
+  background: url(${(props) => `/dongflix/images/icon/${props.iconUrl}`});
   background-size: 24px;
   &::before {
     content: "";
@@ -17,7 +17,7 @@ export const Icon = styled.span`
     top: 0;
     width: 0px;
     height: 24px;
-    background: url(${(props) => `/images/icon/${props.coverUrl}`});
+    background: url(${(props) => `/dongflix/images/icon/${props.coverUrl}`});
     background-size: 24px;
     transition: all 0.4s;
   }

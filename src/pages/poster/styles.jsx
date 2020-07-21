@@ -57,7 +57,7 @@ export const Wrapper = styled.div`
         width: 100px;
         height: 24px;
         margin: 0 auto;
-        background: url("/images/star.png") no-repeat;
+        background: url("/dongflix/images/star.png") no-repeat;
       }
       & .Star_Cover {
         position: absolute;
@@ -66,7 +66,7 @@ export const Wrapper = styled.div`
         display: block;
         width: 0;
         height: 24px;
-        background: url("/images/star_cover.png") no-repeat;
+        background: url("/dongflix/images/star_cover.png") no-repeat;
       }
     }
     &::before {
