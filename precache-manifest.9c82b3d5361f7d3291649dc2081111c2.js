@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "56cfcfb87c069cbccdaf5d6fe5a17c85",
+    "revision": "a583d6fa42c024564c5af0b7b2714bbb",
     "url": "/dongflix/index.html"
   },
   {
-    "revision": "f2aa0ae178f727a7f47f",
+    "revision": "1a24024f2f330b021c65",
     "url": "/dongflix/static/css/main.66e4c2fb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dongflix/static/js/2.041c98c8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f2aa0ae178f727a7f47f",
-    "url": "/dongflix/static/js/main.8ecc9542.chunk.js"
+    "revision": "1a24024f2f330b021c65",
+    "url": "/dongflix/static/js/main.36965cd3.chunk.js"
   },
   {
     "revision": "e14699baf653ed778a2b",
