@@ -10,7 +10,6 @@ const Wrapper = styled.div`
     & .Poster_Wrap {
       width: 8.333%;
       padding: 4px;
-      box-sizing: border-box;
     }
     & > div {
       padding-bottom: 40px;

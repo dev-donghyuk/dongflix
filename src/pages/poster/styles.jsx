@@ -50,7 +50,6 @@ export const Wrapper = styled.div`
       width: 100%;
       opacity: 0;
       padding: 0 8px;
-      box-sizing: border-box;
       & .Star {
         position: relative;
         display: block;
@@ -80,7 +79,6 @@ export const Wrapper = styled.div`
       opacity: 0;
       transition: all 0.4s ease;
       border-radius: 4px;
-      box-sizing: border-box;
     }
     &:hover .Text_Box {
       opacity: 1;

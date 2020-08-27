@@ -48,7 +48,6 @@ export const Wrapper = styled.div`
         height: 60px;
         color: #fff;
         text-align: center;
-        box-sizing: border-box;
         /* &::before {
           content: "";
           position: absolute;

@@ -1,12 +1,60 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
+@charset "UTF-8";
 
-html {
-  font-size: 16px;
+/* noto sans */
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/font/noto-sans-kr/noto-sans-kr-v12-korean-300.eot");
+  src: url("/font/noto-sans-kr/noto-sans-kr-v12-korean-300.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/noto-sans-kr/noto-sans-kr-v12-korean-300.woff2") format("woff2"),
+    url("/font/noto-sans-kr/noto-sans-kr-v12-korean-300.woff") format("woff"),
+    url("/font/noto-sans-kr/noto-sans-kr-v12-korean-300.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/font/noto-sans-kr/noto-sans-kr-v12-korean-regular.eot");
+  src: url("/font/noto-sans-kr/noto-sans-kr-v12-korean-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/noto-sans-kr/noto-sans-kr-v12-korean-regular.woff2")
+      format("woff2"),
+    url("/font/noto-sans-kr/noto-sans-kr-v12-korean-regular.woff")
+      format("woff"),
+    url("/font/noto-sans-kr/noto-sans-kr-v12-korean-regular.ttf")
+      format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/font/noto-sans-kr/noto-sans-kr-v12-korean-500.eot");
+  src: url("/font/noto-sans-kr/noto-sans-kr-v12-korean-500.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/noto-sans-kr/noto-sans-kr-v12-korean-500.woff2") format("woff2"),
+    url("/font/noto-sans-kr/noto-sans-kr-v12-korean-500.woff") format("woff"),
+    url("/font/noto-sans-kr/noto-sans-kr-v12-korean-500.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/font/noto-sans-kr/noto-sans-kr-v12-korean-700.eot");
+  src: url("/font/noto-sans-kr/noto-sans-kr-v12-korean-700.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/noto-sans-kr/noto-sans-kr-v12-korean-700.woff2") format("woff2"),
+    url("/font/noto-sans-kr/noto-sans-kr-v12-korean-700.woff") format("woff"),
+    url("/font/noto-sans-kr/noto-sans-kr-v12-korean-700.ttf") format("truetype");
+}
+* {
+  font-family: "Noto Sans KR", sans-serif !important;
 }
 body {
   margin: 0;
   padding: 0;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Noto Sans KR", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: rgba(20, 20, 20, 1);

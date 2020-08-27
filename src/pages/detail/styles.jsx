@@ -22,7 +22,6 @@ export const Wrapper = styled.div`
     top: 59px;
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
     & .Poster {
       position: absolute;
       left: 0;
@@ -67,7 +66,6 @@ export const Wrapper = styled.div`
                 margin-right: 0;
               }
               &.Rating {
-                box-sizing: border-box;
                 & .Star {
                   position: relative;
                   display: block;
@@ -105,7 +103,6 @@ export const Wrapper = styled.div`
             border-radius: 4px;
             background: rgba(255, 255, 255, 0.3);
             cursor: pointer;
-            box-sizing: border-box;
             &:hover {
               background: rgba(255, 255, 255, 0.5);
             }
@@ -159,7 +156,6 @@ export const Wrapper = styled.div`
         left: 0;
         width: 100%;
         padding: 0 16px;
-        box-sizing: border-box;
         text-align: center;
         & > div {
           & > div {
