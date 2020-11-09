@@ -1,8 +1,8 @@
 {
-  "name": "react_nc",
+  "name": "dev-donghyuk",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dongheok.github.io/dongflix/",
+  "homepage": "https://dev-donghyuk.github.io/dongflix/",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
