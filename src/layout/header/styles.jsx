@@ -28,6 +28,7 @@ export const Wrapper = styled.div`
   left: 0;
   top: 0;
   width: 100%;
+  z-index:1000;
   background: rgba(20, 20, 20, 1);
   & ul {
     overflow: hidden;

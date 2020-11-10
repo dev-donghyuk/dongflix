@@ -13,6 +13,7 @@ export const Wrapper = styled.div`
   position: fixed;
   left: 0;
   bottom: 0;
+  z-index: 1500;
   width: 100%;
   height: calc(100vh - 61px);
   z-index: 9999;

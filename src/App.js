@@ -1,13 +1,16 @@
 import React from "react";
 import Routes from "./Routes";
-import "./css/reset.css";
-import "./css/global.css";
-function App() {
+
+// redux
+import { Provider, useDispatch, useSelector } from "react-redux";
+import { store } from "./redux/redux";
+
+const App = () => {
   return (
-    <div className="App">
+    <Provider store={store}>
       <Routes />
-    </div>
+    </Provider>
   );
-}
+};
 
 export default App;
