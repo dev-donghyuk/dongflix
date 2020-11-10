@@ -152,10 +152,9 @@ const Detail = (props) => {
                   </h3>
                   <a
                     href={
-                      state &&
-                      state.result &&
-                      state.result.homepage &&
-                      `${state.result.homepage}`
+                      state && state.result && state.result.homepage
+                        ? `${state.result.homepage}`
+                        : "/"
                     }
                     target="blank"
                     className="Review"
