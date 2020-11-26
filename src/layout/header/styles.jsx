@@ -29,9 +29,10 @@ export const Wrapper = styled.div`
   top: 0;
   width: 100%;
   z-index:1000;
-  background: rgba(20, 20, 20, 1);
+  background: #202020;
   & ul {
     overflow: hidden;
+  background: #202020;
     & li {
       &:nth-child(1) {
         float: left;
