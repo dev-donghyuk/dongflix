@@ -29,7 +29,9 @@ export const Wrapper = styled.div`
       top: 0;
       z-index: 1;
       max-width: 600px;
+      width: 100%;
       height: 100%;
+      object-fit: cover;
       -webkit-mask-image: -webkit-gradient(
         linear,
         right top,
@@ -153,6 +155,9 @@ export const Wrapper = styled.div`
   }
   @media (max-width: 600px) {
     & .Detail {
+      & .Poster {
+        -webkit-mask-image: none !important;
+      }
       & .Text {
         left: 0;
         width: 100%;
@@ -169,13 +174,6 @@ export const Wrapper = styled.div`
             }
           }
         }
-      }
-    }
-  }
-  @media (max-width: 560px) {
-    & .Detail {
-      & .Poster {
-        -webkit-mask-image: none !important;
       }
     }
   }
