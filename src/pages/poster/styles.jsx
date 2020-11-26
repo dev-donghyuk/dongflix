@@ -22,7 +22,7 @@ export const Wrapper = styled.div`
       position: absolute;
       left: 0;
       top: 50px;
-      z-index: 99999;
+      z-index: 2000;
       width: 100%;
       opacity: 0;
       text-align: center;

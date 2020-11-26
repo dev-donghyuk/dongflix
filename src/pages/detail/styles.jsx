@@ -13,10 +13,9 @@ export const Wrapper = styled.div`
   position: fixed;
   left: 0;
   bottom: 0;
-  z-index: 900;
+  z-index: 1500;
   width: 100%;
   height: calc(100vh - 61px);
-  z-index: 9999;
   & .Detail {
     position: fixed;
     left: 0;
@@ -46,7 +45,7 @@ export const Wrapper = styled.div`
       left: 36%;
       top: 0;
       height: 100%;
-      z-index: 99999;
+      z-index: 2000;
       width: calc(67% - 40px);
       & > div {
         height: 100%;
