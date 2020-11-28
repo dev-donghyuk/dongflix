@@ -1,25 +1,20 @@
 import axios from 'axios';
-import { store } from '../redux/redux';
+import { store } from './redux/redux';
 
 const api = axios.create({
    baseURL: 'https://api.themoviedb.org/3/',
-   headers: {
-      'Access-Control-Allow-Origin': '*',
-   },
 });
 
-// api 통신 base
-
-axios.interceptors.request.use(
+api.interceptors.request.use(
    function (config) {
       // 요청 바로 직전
-      config.params = config.params || {};
-      config.params['api_key'] = '4e88b4f1dedb08e14ee3e3dbe7eeb858';
-      config.params['language'] = 'en-US';
       store.dispatch({
          type: 'SET_IS_LOADING',
          payload: true,
       });
+      config.params = config.params || {};
+      config.params['api_key'] = '4e88b4f1dedb08e14ee3e3dbe7eeb858';
+      config.params['language'] = 'en-US';
       return config;
    },
    function (error) {
@@ -32,7 +27,7 @@ axios.interceptors.request.use(
    }
 );
 
-axios.interceptors.response.use(
+api.interceptors.response.use(
    function (response) {
       /* 200처리 */
       store.dispatch({
@@ -54,20 +49,26 @@ axios.interceptors.response.use(
 
 // api
 
+type contentType = {
+   id: number;
+   searchText:string;
+}
+
 export const movieApi = {
    nowPlaying: () => api.get('movie/now_playing'),
    upComing: () => api.get('movie/upcoming'),
    popular: () => api.get('movie/popular'),
-   movieDetail: (id) =>
+   movieDetail: (id:contentType) =>
       api.get(`movie/${id}`, {
          params: {
             append_to_response: 'videos',
          },
       }),
-   search: (term) =>
-      api.get('/search/movie', {
+   search: (searchText:contentType) =>
+      api.get<contentType>('/search/movie', {
          params: {
-            query: encodeURIComponent(term),
+            // 해외 공용 api라 encodeURIComponent(인코딩) 된 문자가 와야함
+            query: searchText,
          },
       }),
 };
@@ -76,16 +77,17 @@ export const tvApi = {
    topRated: () => api.get('tv/top_rated'),
    popular: () => api.get('tv/popular'),
    airingToday: () => api.get('tv/airing_today'),
-   tvDetail: (id) =>
+   tvDetail: (id:contentType) =>
       api.get(`tv/${id}`, {
          params: {
             append_to_response: 'video',
          },
       }),
-   search: (term) =>
+   search: (searchText:contentType) =>
       api.get('/search/tv', {
          params: {
-            query: encodeURIComponent(term),
+            // 해외 공용 api라 encodeURIComponent(인코딩) 된 문자가 와야함
+            query: searchText,
          },
       }),
 };

@@ -1,6 +1,6 @@
 // 전역 state 값 타입정의
 type ReducerType = {
-   isLoading: Boolean;
+   isLoading: boolean;
 };
 
 // 전역 state 값 초기값 설정
@@ -13,7 +13,7 @@ const reducer: ReducerType = {
 const SET_IS_LOADING = 'SET_IS_LOADING' as const;
 
 // 액션 생성 함수 선언
-export const setIsLoading = (isLoading: Boolean) => ({
+export const setIsLoading = (isLoading: boolean) => ({
    type: SET_IS_LOADING,
    payload: isLoading,
 });

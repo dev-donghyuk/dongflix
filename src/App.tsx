@@ -1,12 +1,18 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+import { RootState } from './redux/redux';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'theme/theme';
-import Test from './page/test';
+import LoadingBar from './components/loading-bar';
+
+import Routes from './Routes';
 
 const App: React.FC = () => {
+   const reducer = useSelector((state: RootState) => state.reducer);
    return (
       <ThemeProvider theme={theme}>
-         <Test title={'test'} />
+         {reducer.isLoading && <LoadingBar />}
+         <Routes />
       </ThemeProvider>
    );
 };
