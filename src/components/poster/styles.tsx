@@ -22,7 +22,7 @@ export const Wrapper = styled.div`
       height: 250px;
       border-radius: 4px;
       transition: all 0.4s ease;
-      & .text_Box {
+      & .text_box {
          position: absolute;
          left: 0;
          top: 50px;
@@ -84,9 +84,13 @@ export const Wrapper = styled.div`
          transition: all 0.4s ease;
          border-radius: 4px;
       }
-      &:hover .Text_Box,
-      .Rating,
-      ::before {
+      &:hover .text_box {
+         opacity: 1;
+      }
+      &:hover .rating {
+         opacity: 1;
+      }
+      &:hover::before {
          opacity: 1;
       }
    }

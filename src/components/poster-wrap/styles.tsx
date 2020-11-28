@@ -1,13 +1,12 @@
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
-   padding: 40px 0px;
+export const Wrapper = styled.div`
    * {
       transition: all 0.4s;
    }
-   & .box_wrap {
-      padding-top: 64px;
-      & .poster_wrap {
+   & .poster_wrap {
+      padding: 40px 0px;
+      & .poster {
          width: calc(100% / 12);
          padding: 4px;
       }
@@ -88,4 +87,3 @@ const Wrapper = styled.div`
       }
    }
 `;
-export default Wrapper;

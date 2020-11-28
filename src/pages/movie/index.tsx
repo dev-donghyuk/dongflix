@@ -3,69 +3,110 @@ import { Grid } from '@material-ui/core';
 import Helmet from 'react-helmet';
 import { movieApi } from 'api';
 
-import Wrapper from './styles';
 import Section from 'components/section';
 import Poster from 'components/poster';
+import PosterWrap from 'components/poster-wrap';
 
 type DataType = {
-   nowPlaying: object[];
-   upComing: object[];
-   popular: object[];
+   nowPlaying: any[];
+   upComing: any[];
+   popular: any[];
    error: string;
 };
 
 const Movie: React.FC = () => {
-   const [data, setData] = useState<object>({});
+   const [data, setData] = useState<DataType>({
+      nowPlaying: [],
+      upComing: [],
+      popular: [],
+      error: '',
+   });
    const MovieFunction = async () => {
       try {
-         const nowPlaying: DataType = await movieApi.nowPlaying();
-         const upComing: DataType = await movieApi.upComing();
-         const popular: DataType = await movieApi.popular();
+         const nowPlaying = await movieApi.nowPlaying();
+         const upComing = await movieApi.upComing();
+         const popular = await movieApi.popular();
          setData({
             ...data,
-            nowPlaying: nowPlaying,
-            upComing: upComing,
-            popular: popular,
+            nowPlaying: nowPlaying.data.results,
+            upComing: upComing.data.results,
+            popular: popular.data.results,
          });
          console.log({
             ...data,
-            nowPlaying: nowPlaying,
-            upComing: upComing,
-            popular: popular,
+            nowPlaying: nowPlaying.data.results,
+            upComing: upComing.data.results,
+            popular: popular.data.results,
          });
       } catch (e) {
+         console.log({ e });
          setData({ ...data, error: "Can't find Tvs information." });
       }
    };
 
    useEffect(() => {
-      console.log(123);
       MovieFunction();
    }, []);
    return (
-      <Wrapper>
+      <>
          <Helmet>
             <title>Movies | Dongflix</title>
          </Helmet>
-         <Grid className="box_wrap">
+         <PosterWrap>
+            {/*  */}
             <Section title="Now Playing">
                {data.nowPlaying.map((x, index) => {
                   return (
-                     <Grid item className="Poster_Wrap" key={x.id}>
+                     <Grid item className="poster" key={x.id}>
                         <Poster
-                           id={x.id}
-                           title={x.original_title}
-                           imageUrl={x.poster_path}
-                           rating={x.vote_average}
-                           year={x.release_date.substring(0, 4)}
                            type={true}
+                           rating={x.vote_average}
+                           id={x.id}
+                           imageUrl={x.poster_path}
+                           title={x.original_title}
+                           year={x.release_date.substring(0, 4)}
                         />
                      </Grid>
                   );
                })}
             </Section>
-         </Grid>
-      </Wrapper>
+            {/*  */}
+            <Section title="UpComing Movies">
+               {data.upComing.map((x, index) => {
+                  return (
+                     <Grid item className="poster" key={x.id}>
+                        <Poster
+                           type={true}
+                           rating={x.vote_average}
+                           id={x.id}
+                           imageUrl={x.poster_path}
+                           title={x.original_title}
+                           year={x.release_date.substring(0, 4)}
+                        />
+                     </Grid>
+                  );
+               })}
+            </Section>
+            {/*  */}
+            <Section title="Popular Movies">
+               {data.popular.map((x, index) => {
+                  return (
+                     <Grid item className="poster" key={x.id}>
+                        <Poster
+                           type={true}
+                           rating={x.vote_average}
+                           id={x.id}
+                           imageUrl={x.poster_path}
+                           title={x.original_title}
+                           year={x.release_date.substring(0, 4)}
+                        />
+                     </Grid>
+                  );
+               })}
+            </Section>
+            {/*  */}
+         </PosterWrap>
+      </>
    );
 };
 
