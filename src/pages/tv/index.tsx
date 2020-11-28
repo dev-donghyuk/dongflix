@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Grid } from '@material-ui/core';
 import Helmet from 'react-helmet';
-import { movieApi } from 'api';
+import { tvApi } from 'api';
 
 import Section from 'components/section';
 import Poster from 'components/poster';
@@ -9,35 +9,29 @@ import PosterWrap from 'components/poster-wrap';
 import Message from 'components/message';
 
 type DataType = {
-   nowPlaying: any[];
-   upComing: any[];
+   topRated: any[];
    popular: any[];
+   airingToday: any[];
    error: string;
 };
 
-const Movie: React.FC = () => {
+const Tv: React.FC = () => {
    const [data, setData] = useState<DataType>({
-      nowPlaying: [],
-      upComing: [],
+      topRated: [],
       popular: [],
+      airingToday: [],
       error: '',
    });
    const MovieFunction = async () => {
       try {
-         const nowPlaying = await movieApi.nowPlaying();
-         const upComing = await movieApi.upComing();
-         const popular = await movieApi.popular();
+         const topRated = await tvApi.topRated();
+         const popular = await tvApi.popular();
+         const airingToday = await tvApi.airingToday();
          setData({
             ...data,
-            nowPlaying: nowPlaying.data.results,
-            upComing: upComing.data.results,
+            topRated: topRated.data.results,
             popular: popular.data.results,
-         });
-         console.log({
-            ...data,
-            nowPlaying: nowPlaying.data.results,
-            upComing: upComing.data.results,
-            popular: popular.data.results,
+            airingToday: airingToday.data.results,
          });
       } catch (e) {
          console.log({ e });
@@ -55,37 +49,18 @@ const Movie: React.FC = () => {
          </Helmet>
          <PosterWrap>
             {/*  */}
-            {data.nowPlaying && data.nowPlaying.length > 0 && (
-               <Section title="Now Playing">
-                  {data.nowPlaying.map((x, index) => {
+            {data.topRated && data.topRated.length > 0 && (
+               <Section title="Top Rated">
+                  {data.topRated.map((x, index) => {
                      return (
                         <Grid item className="poster" key={x.id}>
                            <Poster
-                              type="movie"
-                              rating={x.vote_average}
                               id={x.id}
+                              title={x.original_name}
                               imageUrl={x.poster_path}
-                              title={x.original_title}
-                              year={x.release_date.substring(0, 4)}
-                           />
-                        </Grid>
-                     );
-                  })}
-               </Section>
-            )}
-            {/*  */}
-            {data.upComing && data.upComing.length > 0 && (
-               <Section title="UpComing Movies">
-                  {data.upComing.map((x, index) => {
-                     return (
-                        <Grid item className="poster" key={x.id}>
-                           <Poster
-                              type="movie"
                               rating={x.vote_average}
-                              id={x.id}
-                              imageUrl={x.poster_path}
-                              title={x.original_title}
-                              year={x.release_date.substring(0, 4)}
+                              year={x.first_air_date.substring(0, 4)}
+                              type="tv"
                            />
                         </Grid>
                      );
@@ -94,17 +69,36 @@ const Movie: React.FC = () => {
             )}
             {/*  */}
             {data.popular && data.popular.length > 0 && (
-               <Section title="Popular Movies">
+               <Section title="Popular TV">
                   {data.popular.map((x, index) => {
                      return (
                         <Grid item className="poster" key={x.id}>
                            <Poster
-                              type="movie"
-                              rating={x.vote_average}
                               id={x.id}
+                              title={x.original_name}
                               imageUrl={x.poster_path}
-                              title={x.original_title}
-                              year={x.release_date.substring(0, 4)}
+                              rating={x.vote_average}
+                              year={x.first_air_date.substring(0, 4)}
+                              type="tv"
+                           />
+                        </Grid>
+                     );
+                  })}
+               </Section>
+            )}
+            {/*  */}
+            {data.airingToday && data.airingToday.length > 0 && (
+               <Section title="Airing Today TV">
+                  {data.airingToday.map((x, index) => {
+                     return (
+                        <Grid item className="poster" key={x.id}>
+                           <Poster
+                              id={x.id}
+                              title={x.original_name}
+                              imageUrl={x.poster_path}
+                              rating={x.vote_average}
+                              year={x.first_air_date.substring(0, 4)}
+                              type="tv"
                            />
                         </Grid>
                      );
@@ -118,4 +112,4 @@ const Movie: React.FC = () => {
    );
 };
 
-export default Movie;
+export default Tv;

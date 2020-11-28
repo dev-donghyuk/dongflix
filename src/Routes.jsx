@@ -6,6 +6,9 @@ import Layout from './layout';
 
 // pages
 import Movie from 'pages/movie';
+import Tv from 'pages/tv';
+import Search from 'pages/search';
+import Detail from 'pages/detail';
 
 const Routes = () => {
    return (
@@ -14,10 +17,10 @@ const Routes = () => {
             <Switch>
                <Route path="/" exact component={Movie} />
                <Route path="/movie" exact component={Movie} />
-               {/* <Route path="/tv" exact component={Tv} /> */}
-               {/* <Route path="/search" component={Search} /> */}
-               {/* <Route path="/movie/detail/:id" component={Detail} /> */}
-               {/* <Route path="/tv/detail/:id" component={Detail} /> */}
+               <Route path="/tv" exact component={Tv} />
+               <Route path="/search" component={Search} />
+               <Route path="/movie/detail/:id" component={Detail} />
+               <Route path="/tv/detail/:id" component={Detail} />
 
                <Redirect from="*" to="/movie" />
             </Switch>

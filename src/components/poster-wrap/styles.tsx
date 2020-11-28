@@ -24,64 +24,64 @@ export const Wrapper = styled.div`
       }
    }
    @media (max-width: 1756px) {
-      & .box_wrap {
-         & .poster_wrap {
+      & .poster_wrap {
+         & .poster {
             width: calc(100% / 11);
          }
       }
    }
    @media (max-width: 1610px) {
-      & .box_wrap {
-         & .poster_wrap {
+      & .poster_wrap {
+         & .poster {
             width: calc(100% / 10);
          }
       }
    }
    @media (max-width: 1462px) {
-      & .box_wrap {
-         & .poster_wrap {
+      & .poster_wrap {
+         & .poster {
             width: calc(100% / 9);
          }
       }
    }
    @media (max-width: 1315px) {
-      & .box_wrap {
-         & .poster_wrap {
+      & .poster_wrap {
+         & .poster {
             width: calc(100% / 8);
          }
       }
    }
    @media (max-width: 1170px) {
-      & .box_wrap {
-         & .poster_wrap {
+      & .poster_wrap {
+         & .poster {
             width: calc(100% / 7);
          }
       }
    }
    @media (max-width: 1025px) {
-      & .box_wrap {
-         & .poster_wrap {
+      & .poster_wrap {
+         & .poster {
             width: calc(100% / 6);
          }
       }
    }
    @media (max-width: 876px) {
-      & .box_wrap {
-         & .poster_wrap {
+      & .poster_wrap {
+         & .poster {
             width: calc(100% / 5);
          }
       }
    }
    @media (max-width: 730px) {
-      & .box_wrap {
-         & .poster_wrap {
+      & .poster_wrap {
+         & .poster {
             width: calc(100% / 4);
          }
       }
    }
    @media (max-width: 584px) {
-      & .box_wrap {
-         & .poster_wrap {
+      & .poster_wrap {
+         & .poster {
             width: calc(100% / 3);
          }
       }

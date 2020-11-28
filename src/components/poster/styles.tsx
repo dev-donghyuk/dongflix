@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
    * {
       transition: all 0.4s;
    }
-   & .image_Wrap {
+   & .image_wrap {
       margin-bottom: 5px;
    }
    & .image {
