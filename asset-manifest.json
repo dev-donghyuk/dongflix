@@ -1,22 +1,20 @@
 {
   "files": {
-    "main.css": "/dongflix/static/css/main.aef6bb13.chunk.css",
-    "main.js": "/dongflix/static/js/main.77a6ad41.chunk.js",
-    "main.js.map": "/dongflix/static/js/main.77a6ad41.chunk.js.map",
-    "runtime-main.js": "/dongflix/static/js/runtime-main.374ec312.js",
-    "runtime-main.js.map": "/dongflix/static/js/runtime-main.374ec312.js.map",
-    "static/js/2.24c36e5c.chunk.js": "/dongflix/static/js/2.24c36e5c.chunk.js",
-    "static/js/2.24c36e5c.chunk.js.map": "/dongflix/static/js/2.24c36e5c.chunk.js.map",
+    "main.css": "/dongflix/static/css/main.caaea94d.chunk.css",
+    "main.js": "/dongflix/static/js/main.8285fede.chunk.js",
+    "main.js.map": "/dongflix/static/js/main.8285fede.chunk.js.map",
+    "runtime-main.js": "/dongflix/static/js/runtime-main.8dc64dd9.js",
+    "runtime-main.js.map": "/dongflix/static/js/runtime-main.8dc64dd9.js.map",
+    "static/js/2.76257e9a.chunk.js": "/dongflix/static/js/2.76257e9a.chunk.js",
+    "static/js/2.76257e9a.chunk.js.map": "/dongflix/static/js/2.76257e9a.chunk.js.map",
     "index.html": "/dongflix/index.html",
-    "precache-manifest.6b423134bcf2a561de469ff046dc3eee.js": "/dongflix/precache-manifest.6b423134bcf2a561de469ff046dc3eee.js",
-    "service-worker.js": "/dongflix/service-worker.js",
-    "static/css/main.aef6bb13.chunk.css.map": "/dongflix/static/css/main.aef6bb13.chunk.css.map",
-    "static/js/2.24c36e5c.chunk.js.LICENSE.txt": "/dongflix/static/js/2.24c36e5c.chunk.js.LICENSE.txt"
+    "static/css/main.caaea94d.chunk.css.map": "/dongflix/static/css/main.caaea94d.chunk.css.map",
+    "static/js/2.76257e9a.chunk.js.LICENSE.txt": "/dongflix/static/js/2.76257e9a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.374ec312.js",
-    "static/js/2.24c36e5c.chunk.js",
-    "static/css/main.aef6bb13.chunk.css",
-    "static/js/main.77a6ad41.chunk.js"
+    "static/js/runtime-main.8dc64dd9.js",
+    "static/js/2.76257e9a.chunk.js",
+    "static/css/main.caaea94d.chunk.css",
+    "static/js/main.8285fede.chunk.js"
   ]
 }
