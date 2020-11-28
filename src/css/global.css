@@ -1,124 +1,20 @@
 @charset "UTF-8";
-/* roboto */
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  src: url("/dongflix/font/roboto/roboto-v20-latin-300.eot");
-  src: url("/dongflix/font/roboto/roboto-v20-latin-300.eot?#iefix")
-      format("embedded-opentype"),
-    url("/dongflix/font/roboto/roboto-v20-latin-300.woff2") format("woff2"),
-    url("/dongflix/font/roboto/roboto-v20-latin-300.woff") format("woff"),
-    url("/dongflix/font/roboto/roboto-v20-latin-300.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/dongflix/font/roboto/roboto-v20-latin-regular.eot");
-  src: url("/dongflix/font/roboto/roboto-v20-latin-regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("/dongflix/font/roboto/roboto-v20-latin-regular.woff2") format("woff2"),
-    url("/dongflix/font/roboto/roboto-v20-latin-regular.woff") format("woff"),
-    url("/dongflix/font/roboto/roboto-v20-latin-regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  src: url("/dongflix/font/roboto/roboto-v20-latin-500.eot");
-  src: url("/dongflix/font/roboto/roboto-v20-latin-500.eot?#iefix")
-      format("embedded-opentype"),
-    url("/dongflix/font/roboto/roboto-v20-latin-500.woff2") format("woff2"),
-    url("/dongflix/font/roboto/roboto-v20-latin-500.woff") format("woff"),
-    url("/dongflix/font/roboto/roboto-v20-latin-500.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  src: url("/dongflix/font/roboto/roboto-v20-latin-700.eot");
-  src: url("/dongflix/font/roboto/roboto-v20-latin-700.eot?#iefix")
-      format("embedded-opentype"),
-    url("/dongflix/font/roboto/roboto-v20-latin-700.woff2") format("woff2"),
-    url("/dongflix/font/roboto/roboto-v20-latin-700.woff") format("woff"),
-    url("/dongflix/font/roboto/roboto-v20-latin-700.ttf") format("truetype");
-}
-/* noto sans */
-@font-face {
-  font-family: "Noto Sans KR";
-  font-style: normal;
-  font-weight: 300;
-  src: url("/dongflix/font/noto-sans-kr/noto-sans-kr-v12-korean-300.eot");
-  unicode-range: U+AC00 - U+D7A3;
-  src: url("/dongflix/font/noto-sans-kr/noto-sans-kr-v12-korean-300.eot?#iefix")
-      format("embedded-opentype"),
-    url("/dongflix/font/noto-sans-kr/noto-sans-kr-v12-korean-300.woff2")
-      format("woff2"),
-    url("/dongflix/font/noto-sans-kr/noto-sans-kr-v12-korean-300.woff")
-      format("woff"),
-    url("/dongflix/font/noto-sans-kr/noto-sans-kr-v12-korean-300.ttf")
-      format("truetype");
-}
-@font-face {
-  font-family: "Noto Sans KR";
-  font-style: normal;
-  font-weight: 400;
-  src: url("/dongflix/font/noto-sans-kr/noto-sans-kr-v12-korean-regular.eot");
-  unicode-range: U+AC00 - U+D7A3;
-  src: url("/dongflix/font/noto-sans-kr/noto-sans-kr-v12-korean-regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("/dongflix/font/noto-sans-kr/noto-sans-kr-v12-korean-regular.woff2")
-      format("woff2"),
-    url("/dongflix/font/noto-sans-kr/noto-sans-kr-v12-korean-regular.woff")
-      format("woff"),
-    url("/dongflix/font/noto-sans-kr/noto-sans-kr-v12-korean-regular.ttf")
-      format("truetype");
-}
-@font-face {
-  font-family: "Noto Sans KR";
-  font-style: normal;
-  font-weight: 500;
-  src: url("/dongflix/font/noto-sans-kr/noto-sans-kr-v12-korean-500.eot");
-  unicode-range: U+AC00 - U+D7A3;
-  src: url("/dongflix/font/noto-sans-kr/noto-sans-kr-v12-korean-500.eot?#iefix")
-      format("embedded-opentype"),
-    url("/dongflix/font/noto-sans-kr/noto-sans-kr-v12-korean-500.woff2")
-      format("woff2"),
-    url("/dongflix/font/noto-sans-kr/noto-sans-kr-v12-korean-500.woff")
-      format("woff"),
-    url("/dongflix/font/noto-sans-kr/noto-sans-kr-v12-korean-500.ttf")
-      format("truetype");
-}
-@font-face {
-  font-family: "Noto Sans KR";
-  font-style: normal;
-  font-weight: 700;
-  src: url("/dongflix/font/noto-sans-kr/noto-sans-kr-v12-korean-700.eot");
-  unicode-range: U+AC00 - U+D7A3;
-  src: url("/dongflix/font/noto-sans-kr/noto-sans-kr-v12-korean-700.eot?#iefix")
-      format("embedded-opentype"),
-    url("/dongflix/font/noto-sans-kr/noto-sans-kr-v12-korean-700.woff2")
-      format("woff2"),
-    url("/dongflix/font/noto-sans-kr/noto-sans-kr-v12-korean-700.woff")
-      format("woff"),
-    url("/dongflix/font/noto-sans-kr/noto-sans-kr-v12-korean-700.ttf")
-      format("truetype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
 * {
-  font-family: "Roboto", "Noto Sans KR", sans-serif !important;
-  line-height: 1.3;
+   font-family: 'Roboto', 'Noto Sans KR', sans-serif !important;
+   line-height: 1.3;
+   color: #fff;
 }
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", "Noto Sans KR", sans-serif !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: rgba(20, 20, 20, 1);
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+   margin: 0;
+   padding: 0;
+   font-family: 'Roboto', 'Noto Sans KR', sans-serif !important;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   scrollbar-width: none;
+   -ms-overflow-style: none;
+   background: rgba(20, 20, 20, 1);
 }
 body::-webkit-scrollbar {
-  display: none;
+   display: none;
 }
