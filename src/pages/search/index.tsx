@@ -1,4 +1,5 @@
-import React, { useState, useRef } from 'react';
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useState, useEffect } from 'react';
 import Helmet from 'react-helmet';
 import { Grid } from '@material-ui/core';
 import { movieApi, tvApi } from 'api';
@@ -24,19 +25,31 @@ const Search: React.FC = () => {
       error: '',
    });
 
-   const searchTermRef = useRef<HTMLInputElement>(null);
+   const [currentSearchTerm, setCurrentSearchTerm] = useState<string>('');
 
-   const searchFunction = async () => {
-      let searchTerm: string | undefined = searchTermRef.current?.value;
+   const searchFunction = async (term: string) => {
+      let searchTerm: string | undefined = '';
+      // 새로고침 시, 전에 검색한 기록이 있으면 반영
+      if (term !== '') {
+         searchTerm = term;
+         // 화면에 표시하는 데이터는 디코딩 문자열
+         setCurrentSearchTerm(decodeURIComponent(JSON.parse(searchTerm)));
+      } else {
+         // 통신하는 데이터는 인코딩 문자열
+         searchTerm = encodeURIComponent(currentSearchTerm);
+         // 로컬 저장소에 json형태로 set
+         localStorage.setItem('searchTerm', JSON.stringify(searchTerm));
+      }
       try {
          if (searchTerm) {
-            let movieResults = await movieApi.search(encodeURIComponent(searchTerm));
-            let tvResults = await tvApi.search(encodeURIComponent(searchTerm));
+            let movieResults = await movieApi.search(searchTerm);
+            let tvResults = await tvApi.search(searchTerm);
             setData({
                ...data,
                movieResult: [...movieResults.data.results],
                tvResult: [...tvResults.data.results],
                searchTerm: searchTerm,
+               error: `Nothing found : "${decodeURIComponent(searchTerm)}"`,
             });
          } else if (searchTerm === '') {
             setData({
@@ -51,6 +64,13 @@ const Search: React.FC = () => {
       }
    };
 
+   useEffect(() => {
+      let currentSearchTerm = localStorage.getItem('searchTerm');
+      if (currentSearchTerm) {
+         searchFunction(currentSearchTerm);
+      }
+   }, []);
+
    return (
       <Wrapper>
          <Helmet>
@@ -60,9 +80,12 @@ const Search: React.FC = () => {
          <Grid className="search_form">
             <input
                type="text"
-               ref={searchTermRef}
+               value={currentSearchTerm}
                placeholder="Search Movies or TV Shows..."
-               onKeyUp={(e) => e.key === 'Enter' && searchFunction()}
+               onChange={(e) => {
+                  setCurrentSearchTerm(e.target.value);
+               }}
+               onKeyUp={(e) => e.key === 'Enter' && searchFunction('')}
             />
          </Grid>
          {/*  */}
@@ -108,7 +131,7 @@ const Search: React.FC = () => {
             )}
             {/*  */}
             {data.movieResult && data.tvResult && data.movieResult.length === 0 && data.tvResult.length === 0 && data.searchTerm !== '' && (
-               <Message text={`Nothing found : ${data.searchTerm}`} />
+               <Message text={data.error} />
             )}
             {/*  */}
          </PosterWrap>

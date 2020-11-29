@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
 import { Grid } from '@material-ui/core';
 import Helmet from 'react-helmet';

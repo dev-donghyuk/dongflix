@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
 import { Grid } from '@material-ui/core';
 import Helmet from 'react-helmet';
@@ -22,7 +23,7 @@ const Tv: React.FC = () => {
       airingToday: [],
       error: '',
    });
-   const MovieFunction = async () => {
+   const TvFunction = async () => {
       try {
          const topRated = await tvApi.topRated();
          const popular = await tvApi.popular();
@@ -40,7 +41,7 @@ const Tv: React.FC = () => {
    };
 
    useEffect(() => {
-      MovieFunction();
+      TvFunction();
    }, []);
    return (
       <>

@@ -1,13 +1,17 @@
 import styled from 'styled-components';
 
-// export const Backdrop = styled.div`
-//   width: 100%;
-//   height: 100%;
-//   filter: blur(3px);
-//   opacity: 0.5;
-//   background: url(${(props) => `${props.bgUrl}`}) center center;
-//   background-size: cover;
-// `;
+type BackdropType = {
+   bgUrl: string;
+};
+
+export const Backdrop = styled.div<BackdropType>`
+   width: 100%;
+   height: 100%;
+   filter: blur(3px);
+   opacity: 0.5;
+   background: url(${(props) => `${props.bgUrl}`}) center center;
+   background-size: cover;
+`;
 
 export const Wrapper = styled.div`
    position: fixed;
@@ -64,6 +68,15 @@ export const Wrapper = styled.div`
                      margin-right: 24px;
                      color: #fff;
                      text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+                     &.genres {
+                        & em {
+                           display: inline-block;
+                           margin-right: 4px;
+                           &.last {
+                              margin-right: 0;
+                           }
+                        }
+                     }
                      &:last-child {
                         margin-right: 0;
                      }
