@@ -45,10 +45,6 @@ const Detail = () => {
          ...data,
          result,
       });
-      console.log({
-         ...data,
-         result,
-      });
    };
 
    useEffect(() => {

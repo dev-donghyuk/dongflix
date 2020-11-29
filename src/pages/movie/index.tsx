@@ -34,12 +34,6 @@ const Movie: React.FC = () => {
             upComing: upComing.data.results,
             popular: popular.data.results,
          });
-         console.log({
-            ...data,
-            nowPlaying: nowPlaying.data.results,
-            upComing: upComing.data.results,
-            popular: popular.data.results,
-         });
       } catch (e) {
          console.log({ e });
          setData({ ...data, error: "Can't find Tvs information." });
