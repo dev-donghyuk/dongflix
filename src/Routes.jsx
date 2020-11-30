@@ -12,7 +12,7 @@ import Detail from "pages/detail";
 
 const Routes = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/dongflix">
       <Layout>
         <Switch>
           <Route path="/" exact component={Movie} />
