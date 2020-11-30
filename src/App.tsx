@@ -1,9 +1,9 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { RootState } from './redux/redux';
+import { RootState } from 'redux/redux';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'theme/theme';
-import LoadingBar from './components/loading-bar';
+import LoadingBar from 'components/loading-bar';
 
 import Routes from './Routes';
 

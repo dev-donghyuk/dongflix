@@ -1,6 +1,6 @@
 import React from 'react';
-import Wrapper from './styles';
 import { Grid, LinearProgress } from '@material-ui/core';
+import Wrapper from './styles';
 
 const LoadingBar: React.FC = () => {
    return (

@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { store } from './redux/redux';
+import { store } from 'redux/redux';
 
 const api = axios.create({
    baseURL: 'https://api.themoviedb.org/3/',
