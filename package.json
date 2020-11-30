@@ -2,7 +2,7 @@
   "name": "dev-donghyuk",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dev-donghyuk.github.io/dongflix/",
+  "homepage": "https://dev-donghyuk.github.io/dongflix",
   "dependencies": {
     "@material-ui/core": "^4.9.14",
     "@material-ui/icons": "^4.9.1",
