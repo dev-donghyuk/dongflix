@@ -121,7 +121,7 @@ export const Wrapper = styled.div`
                   }
                }
                & p {
-                  width: 75%;
+                  width: 635px;
                   line-height: 24px;
                   margin-top: 24px;
                   color: rgba(255, 255, 255, 0.8);
