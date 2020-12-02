@@ -87,7 +87,7 @@ export const Wrapper = styled.div`
                            width: 80px;
                            height: 16px;
                            margin: 0 auto;
-                           background: url('/dongflix/images/star.png') no-repeat left bottom;
+                           background: url('/images/star.png') no-repeat left bottom;
                            background-size: 80px;
                         }
                         & .star_cover {
@@ -97,7 +97,7 @@ export const Wrapper = styled.div`
                            display: block;
                            width: 0;
                            height: 16px;
-                           background: url('/dongflix/images/star_cover_w.png') no-repeat left bottom;
+                           background: url('/images/star_cover_w.png') no-repeat left bottom;
                            background-size: 80px;
                         }
                      }
@@ -132,7 +132,7 @@ export const Wrapper = styled.div`
                   & button {
                      width: 32px;
                      height: 23px;
-                     background: url('/dongflix/images/icon/youtube_icon.png') no-repeat;
+                     background: url('/images/icon/youtube_icon.png') no-repeat;
                      background-size: 32px;
                      border: none;
                      outline: none;

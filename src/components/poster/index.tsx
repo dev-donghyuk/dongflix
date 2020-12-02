@@ -18,7 +18,7 @@ const Poster: React.FC<PosterType> = ({ type, rating, id, imageUrl, title, year 
       <Link to={type === 'movie' ? `/movie/detail/${id}` : `/tv/detail/${id}`}>
          <Wrapper>
             <Grid className="image_wrap">
-               <Image bgUrl={imageUrl ? `https://image.tmdb.org/t/p/w200${imageUrl}` : '/dongflix/images/notVideo.jpg'} className="image">
+               <Image bgUrl={imageUrl ? `https://image.tmdb.org/t/p/w200${imageUrl}` : '/images/notVideo.jpg'} className="image">
                   <Grid className="text_box">
                      <h2 className="title">{title.length > 15 ? `${title.substring(0, 15)}...` : title}</h2>
                      <p className="year">{year}</p>
