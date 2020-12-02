@@ -9,8 +9,9 @@ const Wrapper = styled.div`
    & .progress_bar {
       position: relative;
       width: 100%;
+      background:${props=>props.theme.bg};
       & > div {
-         background: #27ae60;
+         background: ${props=>props.theme.main};
       }
    }
    & .click_block {
