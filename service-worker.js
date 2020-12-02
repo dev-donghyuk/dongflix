@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/dongflix/precache-manifest.615c0478cfecb4d412a757f008c6f1d7.js"
+  "/dongflix/precache-manifest.58252436445dc62098ac3f786a85d860.js"
 );
 
 self.addEventListener('message', (event) => {
