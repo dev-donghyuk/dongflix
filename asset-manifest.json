@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/dongflix/static/css/main.4303761d.chunk.css",
-    "main.js": "/dongflix/static/js/main.d6673d52.chunk.js",
-    "main.js.map": "/dongflix/static/js/main.d6673d52.chunk.js.map",
+    "main.js": "/dongflix/static/js/main.c73d7af4.chunk.js",
+    "main.js.map": "/dongflix/static/js/main.c73d7af4.chunk.js.map",
     "runtime-main.js": "/dongflix/static/js/runtime-main.feeba504.js",
     "runtime-main.js.map": "/dongflix/static/js/runtime-main.feeba504.js.map",
     "static/js/2.43acfb2c.chunk.js": "/dongflix/static/js/2.43acfb2c.chunk.js",
     "static/js/2.43acfb2c.chunk.js.map": "/dongflix/static/js/2.43acfb2c.chunk.js.map",
     "index.html": "/dongflix/index.html",
-    "precache-manifest.733e796ae9585d51a3999dfc7596179e.js": "/dongflix/precache-manifest.733e796ae9585d51a3999dfc7596179e.js",
+    "precache-manifest.615c0478cfecb4d412a757f008c6f1d7.js": "/dongflix/precache-manifest.615c0478cfecb4d412a757f008c6f1d7.js",
     "service-worker.js": "/dongflix/service-worker.js",
     "static/css/main.4303761d.chunk.css.map": "/dongflix/static/css/main.4303761d.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.feeba504.js",
     "static/js/2.43acfb2c.chunk.js",
     "static/css/main.4303761d.chunk.css",
-    "static/js/main.d6673d52.chunk.js"
+    "static/js/main.c73d7af4.chunk.js"
   ]
 }
