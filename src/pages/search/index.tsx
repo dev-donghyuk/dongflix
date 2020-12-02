@@ -28,9 +28,9 @@ const Search: React.FC = () => {
    const [currentSearchTerm, setCurrentSearchTerm] = useState<string>('');
 
    const searchFunction = async (term: string) => {
-      let searchTerm: string | undefined = '';
+      let searchTerm: string | undefined = "";
       // 새로고침 시, 전에 검색한 기록이 있으면 반영
-      if (term !== '') {
+      if (term !== "") {
          searchTerm = term;
          // 화면에 표시하는 데이터는 디코딩 문자열
          setCurrentSearchTerm(decodeURIComponent(JSON.parse(searchTerm)));
@@ -41,7 +41,7 @@ const Search: React.FC = () => {
          localStorage.setItem('searchTerm', JSON.stringify(searchTerm));
       }
       try {
-         if (searchTerm) {
+         if (searchTerm!=="") {
             let movieResults = await movieApi.search(searchTerm);
             let tvResults = await tvApi.search(searchTerm);
             setData({
@@ -49,9 +49,9 @@ const Search: React.FC = () => {
                movieResult: [...movieResults.data.results],
                tvResult: [...tvResults.data.results],
                searchTerm: searchTerm,
-               error: `Nothing found : "${decodeURIComponent(searchTerm)}"`,
+               error: `Nothing found : ${decodeURIComponent(searchTerm)}`,
             });
-         } else if (searchTerm === '') {
+         } else  {
             setData({
                movieResult: [],
                tvResult: [],
@@ -66,7 +66,8 @@ const Search: React.FC = () => {
 
    useEffect(() => {
       let currentSearchTerm = localStorage.getItem('searchTerm');
-      if (currentSearchTerm) {
+      // 만약, 전에 검색했던 검색어가 없거나 빈게 아니면 히스토리를 가져와라
+      if (currentSearchTerm&&currentSearchTerm!==`""`) {
          searchFunction(currentSearchTerm);
       }
    }, []);
@@ -85,7 +86,7 @@ const Search: React.FC = () => {
                onChange={(e) => {
                   setCurrentSearchTerm(e.target.value);
                }}
-               onKeyUp={(e) => e.key === 'Enter' && searchFunction('')}
+               onKeyUp={(e) => e.key === 'Enter' && searchFunction("")}
             />
          </Grid>
          {/*  */}
