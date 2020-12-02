@@ -70,7 +70,7 @@ const Detail = () => {
                   bgUrl={
                      data.result.backdrop_path
                         ? `https://image.tmdb.org/t/p/original${data.result.backdrop_path}`
-                        : '/images/notVideo.jpg'
+                        : '/dongflix/images/notVideo.jpg'
                   }
                />
                <Grid container className="detail">
@@ -78,7 +78,7 @@ const Detail = () => {
                      src={
                         data.result.poster_path
                            ? `https://image.tmdb.org/t/p/original${data.result.poster_path}`
-                           : '/images/notVideo.jpg'
+                           : '/dongflix/images/notVideo.jpg'
                      }
                      alt="poster"
                      className="poster"
