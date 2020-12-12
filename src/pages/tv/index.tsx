@@ -46,7 +46,7 @@ const Tv: React.FC = () => {
    return (
       <>
          <Helmet>
-            <title>Movies | Dongflix</title>
+            <title>Tv | Dongflix</title>
          </Helmet>
          <PosterWrap>
             {/*  */}
