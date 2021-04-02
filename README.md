@@ -12,32 +12,32 @@ React와TypeScript를 이용한 최신, 인기, 공개 예정인 영화와 TV프
 
 ### 👌 영화 페이지
 
-![20210402_201840](https://user-images.githubusercontent.com/60591071/113411442-b69b5780-93f0-11eb-9d8a-66c469082bb7.png)
+![1](https://user-images.githubusercontent.com/60591071/113411600-2f021880-93f1-11eb-8fe7-c972dbfa8b47.png)
 
-![20210402_201551](https://user-images.githubusercontent.com/60591071/113411448-b7cc8480-93f0-11eb-96f5-c9bdb5e5018f.png)
+![2](https://user-images.githubusercontent.com/60591071/113411602-30cbdc00-93f1-11eb-97cd-9ab179bd6d9b.png)
 
 -
 
 ### 👌 애니메이션 페이지
 
-![20210402_201750](https://user-images.githubusercontent.com/60591071/113411449-b8651b00-93f0-11eb-9933-d970539e1322.png)
+![3](https://user-images.githubusercontent.com/60591071/113411604-30cbdc00-93f1-11eb-810f-de4b641ccee3.png)
 
-![20210402_201602](https://user-images.githubusercontent.com/60591071/113411450-b8fdb180-93f0-11eb-93e2-cf33edd1f27f.png)
+![4](https://user-images.githubusercontent.com/60591071/113411606-31647280-93f1-11eb-8831-934565fbfc42.png)
 
 -
 
 ### 👌 상세 페이지
 
-![20210402_201816](https://user-images.githubusercontent.com/60591071/113411452-b9964800-93f0-11eb-939a-3e6f8c2bb82a.png)
+![5](https://user-images.githubusercontent.com/60591071/113411607-31fd0900-93f1-11eb-9f98-26119646f3c0.png)
 
-![20210402_201641](https://user-images.githubusercontent.com/60591071/113411453-b9964800-93f0-11eb-9596-fde1db9216b4.png)
+![6](https://user-images.githubusercontent.com/60591071/113411609-31fd0900-93f1-11eb-9dd6-a4a71b38994d.png)
 
 - 
 
 ### 👌 검색 페이지
 
-![20210402_201829](https://user-images.githubusercontent.com/60591071/113411455-ba2ede80-93f0-11eb-8320-d7dd27ab21d3.png)
+![7](https://user-images.githubusercontent.com/60591071/113411610-32959f80-93f1-11eb-91be-ab1dc03da6eb.png)
 
-![20210402_201702](https://user-images.githubusercontent.com/60591071/113411456-ba2ede80-93f0-11eb-969e-346d742abd65.png)
+![8](https://user-images.githubusercontent.com/60591071/113411611-32959f80-93f1-11eb-8f42-ddd98f940f50.png)
 
 - 
