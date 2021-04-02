@@ -16,7 +16,7 @@ React와TypeScript를 이용한 최신, 인기, 공개 예정인 영화와 TV프
 
 ![2](https://user-images.githubusercontent.com/60591071/113411602-30cbdc00-93f1-11eb-97cd-9ab179bd6d9b.png)
 
--
+- 중복되는 css가 많아 컴포넌트로 만들어서 효율적으로 영화페이지를 구현했습니다.
 
 ### 👌 애니메이션 페이지
 
@@ -24,7 +24,7 @@ React와TypeScript를 이용한 최신, 인기, 공개 예정인 영화와 TV프
 
 ![4](https://user-images.githubusercontent.com/60591071/113411606-31647280-93f1-11eb-8831-934565fbfc42.png)
 
--
+- 중복되는 css가 많아 컴포넌트로 만들어서 효율적으로 애니메이션 페이지를 구현했습니다.
 
 ### 👌 상세 페이지
 
@@ -32,7 +32,7 @@ React와TypeScript를 이용한 최신, 인기, 공개 예정인 영화와 TV프
 
 ![6](https://user-images.githubusercontent.com/60591071/113411609-31fd0900-93f1-11eb-9dd6-a4a71b38994d.png)
 
-- 
+- 중복되는 css가 많아 컴포넌트로 만들어서 효율적으로 영화페이지를 구현했습니다.
 
 ### 👌 검색 페이지
 
@@ -40,4 +40,4 @@ React와TypeScript를 이용한 최신, 인기, 공개 예정인 영화와 TV프
 
 ![8](https://user-images.githubusercontent.com/60591071/113411611-32959f80-93f1-11eb-8f42-ddd98f940f50.png)
 
-- 
+- 페이지에서 검색하다가 이동을 해도 전에 검색했던 키워드와 검색 결과가 남아도록 상태값을 localStorage에 저장하여 기능을 구현했습니다.
