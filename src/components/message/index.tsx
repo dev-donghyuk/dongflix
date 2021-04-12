@@ -2,7 +2,7 @@ import React from 'react';
 import Wrapper from './styles';
 
 type MessageType = {
-   text: string,
+   text: string;
 };
 
 const Message: React.FC<MessageType> = ({ text }) => {
