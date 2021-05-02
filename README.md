@@ -1,8 +1,8 @@
-# Dongflix(반응형 영화 웹 페이지입니다.)
+# Dongflix
 
 ## 👀 서비스 소개
 React, TypeScript를 이용한 최신, 인기, 공개 예정인 영화와 TV프로그램의 포스터, 별점, 영화 정보, 검색기능, 영화 페이지 링크, 유튜브 영화 예고편까지 
-한 눈에 볼 수 있는 반응형 영화 웹 사이트입니다.
+한 눈에 볼 수 있는 반응형 영화 웹 페이지입니다.
 
 사용언어 : React, Type Script, Redux, Styled Components, Material UI,
 
