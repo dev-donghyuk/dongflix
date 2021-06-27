@@ -99,7 +99,7 @@ const Movie: React.FC = () => {
                               id={x.id}
                               imageUrl={x.poster_path}
                               title={x.original_title}
-                              year={x.release_date.substring(0, 4)}
+                              year={x && x.release_date && x.release_date.substring(0, 4)}
                            />
                         </Grid>
                      );
